@@ -55,7 +55,7 @@ app.post('/login', (req, res) => {
 mongoose.connect('mongodb+srv://navnathsangale71:navnath@mern.mejqz2a.mongodb.net/?retryWrites=true&w=majority&appName=mern')
     .then(() => {
         app.listen(3000, () => {
-            console.log("Server listening on http://127.0.0.1:3000");
+            console.log("Server listening on http://0.0.0.0/0:3000");
         });
     })
     .catch(err => console.error('Error connecting to MongoDB:', err.message));
